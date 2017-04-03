@@ -1,0 +1,44 @@
+env:
+  global:
+    - PROJECT_NAME: "processwire-demo"
+    # master SHA256-606c78f9bd55e946b34762b7f54b65177eaa37a3fc42559ea62712cf30431b2b
+    - secure: ""
+    # beta SHA256-
+    # - secure: ""
+install:
+  - npm install -g csslint htmlhint
+  - wget -O /tmp/phantomjs-netlog.js https://gist.githubusercontent.com/memiux/0e8377f9361fefce64e848e74fa3232c/raw/phantomjs-netlog.js
+script:
+  - "find $PWD -path */public/site/templates/* -type f -name k-*.css -size +1c | xargs --no-run-if-empty csslint"
+  - "find $PWD -path */public/site/templates/* -type f -name *.html -size +1c | xargs --no-run-if-empty htmlhint"
+  - "find $PWD -path */public/site/templates/* -type f -name *.html | xargs --no-run-if-empty -I{} phantomjs --ignore-ssl-errors=true --ssl-protocol=any /tmp/phantomjs-netlog.js file://{}"
+notifications:
+  email: false
+  slack: krrrunch:Heq9HQZoEZT9rZJohu8in30e
+language: node_js
+node_js:
+  - "5.1"
+before_deploy:
+  - 'git config --global user.email "deploy@travis"'
+  - 'git config --global user.name "[Deploy]"'
+  - "wget -O /tmp/git-ftp https://gist.githubusercontent.com/memiux/f4f36ff274bd827aac573520242dea8a/raw/git-ftp && chmod +x /tmp/git-ftp"
+  - export GIT_FTP_URL_BRANCH=GIT_FTP_URL_$TRAVIS_BRANCH
+  - '/tmp/git-ftp add-scope $TRAVIS_BRANCH "${!GIT_FTP_URL_BRANCH}"'
+  - git config git-ftp.syncroot public
+  - npm install -g uglify-js
+  - gem install sass -v 3.4.22 --no-ri --no-rdoc
+  - /tmp/git-ftp catchup -s $TRAVIS_BRANCH -v
+  - ./public/site/templates/koi.sh -p -f
+  - git commit -m deploy *.php
+deploy:
+  - provider: script
+    script: /tmp/git-ftp push -s $TRAVIS_BRANCH -v
+    skip_cleanup: true
+    on:
+      branch: master
+  - provider: script
+    script: /tmp/git-ftp push -s $TRAVIS_BRANCH -v
+    on:
+      branch: beta
+after_deploy:
+  - './cleanup.py "${!GIT_FTP_URL_BRANCH}"'
