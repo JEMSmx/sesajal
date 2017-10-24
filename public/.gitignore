@@ -28,7 +28,6 @@ site/assets/cache
 site/assets/active.php
 site/assets/installed.php
 site/config.php
-site/modules/
 site/templates/static/.current-version
 site/templates/static/455375-*
 composer.lock
