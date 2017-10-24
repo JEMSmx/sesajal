@@ -1,12 +1,17 @@
-<?php include("./_head.php"); ?>
+<?php
 
-  <!-- Section: Main -->
-  <section class="k-section wrap wider">
-    <div class="grid">
-      <div class="unit whole">
-      	<?php k::render_nav_tree($pages->get('/'), 4); ?>
-      </div>
-    </div>
-  </section>
+include("./_head.php"); ?>
+
+<div id='content'>
+
+	<?php 
+	
+	$maxDepth = 4; 
+	renderNavTree($pages->get('/'), $maxDepth); 
+	// see the _init.php for the renderNavTree function
+	
+	?>
+
+</div>
 
 <?php include("./_foot.php"); ?>
