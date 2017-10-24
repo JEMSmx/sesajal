@@ -5,7 +5,7 @@
 	<!-- footer -->
 	<footer id='footer' role="contentinfo">
 		<p>
-		Powered by <a href='http://processwire.com'>ProcessWire CMS</a>  &nbsp; / &nbsp; 
+		Powered by <a href='http://processwire.com'>ProcessWire CMS </a>  &nbsp; / &nbsp; 
 		<?php 
 		if($user->isLoggedin()) {
 			// if user is logged in, show a logout link
