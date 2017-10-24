@@ -1,8 +1,8 @@
 env:
   global:
-    - PROJECT_NAME: "processwire-demo"
+    - PROJECT_NAME=processwire-demo
     # master SHA256-606c78f9bd55e946b34762b7f54b65177eaa37a3fc42559ea62712cf30431b2b
-    - secure: "h9rsNRaA4/0klbEVyUBL2yy1+tg26iejdcAIhhZNMGaxA3mnOpR390srloeUORhIwRk48yPBEsmwHEOwDkC2/nn5HjBn18d5BWBbmMjQbYdpyupwha4isnqmBqy3wRYQ7AFf4AJldvACbm2NpW4PKZ/FZa0kU+/Gz3IFv4uGBEZ1s+h10Mne099izSHqTyusSiRv1HjLN+Vhz2pDiBPL6NJF0ZhE2K7uZyrDhLLn38tx9p3Wj/fovWn+xAKORtM8+97EDSwu8nGZnim6W8M85Y6PJ+KWrrsTRBQgn+WQ9Z8ctrDOiw7bj5biQx3MDlhAEyOe/yH0QMnDDNk+8PjnwXynQ5x3lTfaDP+iUGHLrvc8xXbEiudu5RP10yq4kMm+8IATxGMC8L3XrYb5aqD1kx72aw7IPEkVq7ZEPCX6/pok4FgLgxJInbwvFR3u5IWvRUvFcQxvsme1GQbyO/4RSOnnrfMY36q/JilJ0200A9dths2PtaXwFVSlERPvOQMRkT4WRJqYQbLrGqgd7BuSyN+9lqj60wIabeN68+949b0MK/l6PdpLxtoGH2a+qHJBqWcKpvi+IYDWbt3iQYXTqaIDXh4FzwylZ3ZSDQH8/RuGzQiSWN07ylVv5RSCdYFuy4HiSzc2xI+AC67Dt1cbqXo/nGzfvuYfvulh6wFwGhI="
+    - secure: "hB/9KoanqxBUKoJwKH8WWbzI7oFbxVhjEA0shWLki346UjnZUQprNNjof7KgA06ADUUfsBuf02DU4dJBGCdU9o/RQm4kFJOz8TgcJzS9n5nTsN2B+0nFc/mJIp1qyMKn4j7p3fylDYAuz8szNKmCwXa6n8by0mtPJ6j7pgNK2f4xzzWB2x3f7wP7sXhhJkwJUXYjii1NC1zR5hwcP0TJl8X9opJRgNGwABU7mTkMNf1QxkYUK3VyyE7clOSYMr4DRB9aq+fjeykeuKuFqIk+vjk3Nb2LaroRcWAU8fDke14M71zYfH0opjGnezb12j3NU58VrESbjL/C5p/3bECfPJsvzmdhwfnVgdZvx1+gWjhHWqnm9YQbmc7+EYuO+T2guXa7dKxcn5oU7O/QiBRG4hKsubFHwFfZNG7hblDwDo4+V0tz+02T7mI6Ka3T6jVLSgt3t+ScfY10HyKKxRLdWldskLwxI47Tm6ZU8gL3Gjzfv2zV6okr/Cv+r5hjxvPTxeXqVicBZ/NqYawSrhnEMyzFWizqfeTjJAjp+AMX6nWK4820ETvwD/s+gzV3cj8ESErM2N+yabWzGkwC/B6gibpjEnKbeSNbs6eQaPUm4d2U0YfGSPf8vJeQ47iwJhohMLYppnVM1omyFohvR06HPiDhtEj5MOviXYMoKs0is7c="
     # beta SHA256-af7507b9411c78ff3df1efd621fbcb9ec9ab7057af1aa1e543dbca6a9c4020f0
     # secure: ""
 script:
@@ -22,12 +22,12 @@ before_deploy:
   - gem install sass -v 3.4.23 --no-ri --no-rdoc
 deploy:
   - provider: script
-    script: /tmp/git-ftp push -s $TRAVIS_BRANCH -v
+    script: ./git-ftp push -s $TRAVIS_BRANCH -v -f
     skip_cleanup: true
     on:
       branch: master
   - provider: script
-    script: /tmp/git-ftp push -s $TRAVIS_BRANCH -v -f
+    script: ./git-ftp push -s $TRAVIS_BRANCH -v -f
     skip_cleanup: true
     on:
       branch: beta
