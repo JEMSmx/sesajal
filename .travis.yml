@@ -2,9 +2,9 @@ env:
   global:
     - PROJECT_NAME=sesajal
     # master SHA256-606c78f9bd55e946b34762b7f54b65177eaa37a3fc42559ea62712cf30431b2b
-    # - secure: ""
+    #- secure: ""
     # beta SHA256-af7507b9411c78ff3df1efd621fbcb9ec9ab7057af1aa1e543dbca6a9c4020f0
-    # secure: ""
+    - secure: "PybdKZlmGPEHc9mhLN4lM0BBrHmDuNghBjDtw/mmeRRCFZpXDVJYNKIM2MX1qUEJOKX6VC7Yw0sy9NZJBAXiJp7cm+Ks05y9u1mrc731GaPxNBnZ6pWQthwJC8dqrKKoL4/lCjRaflklC6u6eR/DHMpPIL++8ad7WmoJeDirFFj5o5smPyR+O/OELWGm54H/vHolGiTGQe0dMaGcBBAO8Z3GQX6lk5rZ7M+xbgh4o2oIojCAdZPA8R2IiHr90wHSKMt8pLveduEDHVC0daLkLF6EWwiqUhHTVnnbyo/pPLPWdfpm/fZAMhMDDjr84DoQle8m57COCCClG2QDz/dIKkEiS8Dzmj9xgm8Dov7FMSdekxnAxbm/TiOaVv2mjDdimXl5M9O1KKPTsJc0zN/dqXsZm2lPdrqErf/6FUN4ne7kVy+v6IYB2ki6EbNfzRxekvH9/ge43A3a6U5zeXRs0Ebp7Xelml2pu95VCumLhTdIVzwEpgMnP35FcjcaOns2Ih+omy7p4C8CKCetp73YVhsQeA5UEPm/iYvFc0VA+t8F4wlxczDkyD//lwSIuDv+BnOcNrXIzFF7NsgxJTys5N0mbT8etoXMZdrIks2i7il3v59ezrWhCwHAielFaSZzdcouGUq8MLEv6NBmpj59KI1HGQVvSqEhfZtQDi8UoVo="
 script:
   - true
 notifications:
