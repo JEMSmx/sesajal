@@ -1,0 +1,28 @@
+// hacking "gridism.css" a little bit.
+.j-workspace {
+  box-sizing: border-box;
+  .j-wrap {
+    max-width: $max-width-screen;
+    margin: 0 auto;
+    padding: $space-4 $space-2;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  .j-wrap-80 {
+    margin: 0 auto;
+    padding-left: $space-2;
+    padding-right: $space-2;
+    box-sizing: border-box;
+    display: flex;
+    max-width: $max-width-screen * .8;
+  }
+  .j-wrap-90 {
+    margin: 0 auto;
+    padding-left: $space-2;
+    padding-right: $space-2;
+    box-sizing: border-box;
+    display: flex;
+    max-width: $max-width-screen * .9;
+  }
+}

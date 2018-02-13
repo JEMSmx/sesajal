@@ -1,0 +1,10 @@
+.transformation-histories {
+  min-height: 50vh;
+  padding-top: $space-2;
+  padding-bottom: $space-2;
+  .cards-content {
+    .card {
+      max-width: 50%;
+    }
+  }
+}

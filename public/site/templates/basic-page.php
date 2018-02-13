@@ -1,45 +1,26 @@
-<?php
+<?php include('./_head.php'); 
 
-include('./_head.php'); // include header markup ?>
+	include('./_nav.php'); ?>
 
-	<div id='content'><?php 
-	
-		// output 'headline' if available, otherwise 'title'
-		echo "<h1>" . $page->get('headline|title') . "</h1>";
-	
-		// output bodycopy
-		echo $page->body; 
-	
-		// render navigation to child pages
-		renderNav($page->children); 
+	<main class="j-workspace aviso-privacidad-workspace">
+		<section class="intro-section" style="">
+		    <div class="hero">
+		      <div class="hero-text">
+		        <h1><?=$page->title;?></h1>
+		      </div>
+		    </div>
+		</section>
 		
-		// TIP: Notice that this <div id='content'> section is
-		// identical between home.php and basic-page.php. You may
-		// want to move this to a separate file, like _content.php
-		// and then include('./_content.php'); here instead, on both
-		// the home.php and basic-page.php template files. Then when
-		// you make yet more templates that need the same thing, you
-		// can simply include() it from them.
-	
-	?></div><!-- end content -->
+		
 
-	<aside id='sidebar'><?php
-	
-		// rootParent is the parent page closest to the homepage
-		// you can think of this as the "section" that the user is in
-		// so we'll assign it to a $section variable for clarity
-		$section = $page->rootParent; 
-	
-		// if there's more than 1 page in this section...
-		if($section->hasChildren > 1) {
-			// output sidebar navigation
-			// see _init.php for the renderNavTree function
-			renderNavTree($section);
-		}
-	
-		// output sidebar text if the page has it
-		echo $page->sidebar; 
-	
-	?></aside><!-- end sidebar -->
+		<section class="" style="">
+			<div class="j-wrap" style="">
+				<div class="text-container">
+					<?=$page->body;?>
+				</div>
+			</div>
+		</section>
+		
+	</main>
 
-<?php include('./_foot.php'); // include footer markup ?>
+<?php include('./_foot.php'); ?>

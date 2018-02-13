@@ -1,0 +1,15 @@
+.text-box-plus-image {
+  padding-top: $space-2;
+  padding-bottom: $space-2;
+  min-height: 50vh;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: $tablet){
+    flex-direction: column;
+  }
+  .text-box {
+    padding-right: $space-2;
+  }
+}

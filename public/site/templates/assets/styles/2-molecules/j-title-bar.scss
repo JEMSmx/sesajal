@@ -1,0 +1,15 @@
+.title-bar {
+  background-color: $color-secondary;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: $space-4;
+  margin-bottom: $space-4;
+  h2,h3,h4,h5 {
+    background-color: $white;
+    margin: 0;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}

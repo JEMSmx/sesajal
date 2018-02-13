@@ -1,0 +1,149 @@
+.media-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: $space-6 0;
+  &:first-of-type {
+    justify-content: space-around;
+    margin: $space-5 0;
+    .media-element {
+      flex-basis: 48%;
+      @media screen and (max-width: $mobile) {
+        flex-basis: 96%;
+        margin: $space-base 0;
+      }
+    }
+  }
+  &:nth-of-type(2) {
+    justify-content: space-around;
+    margin-top: $space-base;
+    margin-bottom: $space-base;
+    .media-element {
+      flex-basis: 24%;
+      @media screen and (max-width: $mobile) {
+        flex-basis: 48%;
+        margin: $space-base 0;
+        .text-container {
+          font-size: 88%;
+        }
+      }
+    }
+  }
+  .media-element {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    // margin-right: $space-2;
+    
+    &.center {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      // Podemos cambiar el min width 
+      // segun la cantidad de elementos que necesitemos
+      min-width: 16%;
+      font-size: 16px;
+
+      .image-container {
+        margin: 0;
+        img {
+          height: auto;
+        }
+      }
+      .text-container {
+        h3 {
+          color: $gray-darker;
+          font-size: 16px;
+          font-family: $font-gotham;
+        }
+      }
+      @media screen and (max-width: $tablet) {
+        // flex-basis: 48%;
+      }
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    .image-container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      height: 100%;
+      margin-right: $space-3;
+      img {
+        height: 140px;
+      }
+    }
+    .text-container {
+      h3 {
+        color: $color-greenlight;
+        font-size: 40px;
+        font-family: $font-wicked;
+      }
+      p {
+        font-size: 24px;
+      }
+      li {
+        margin: 0;
+        p {
+          font-size: 24px;
+          line-height: 20px;
+          margin: 0;
+        }
+      }
+      
+    }
+    h3 {
+      font-size: 16px;
+    }
+  }
+}
+/* Presentaciones del media product para footer */
+.media-product-presentations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: $space-5 0;
+  flex-wrap: wrap;
+  h4 {
+    color: $color-greenlight;
+    font-family: $font-wicked;
+    text-transform: uppercase;
+  }
+  h4,p,img {
+    margin-right: $space-base;
+    font-size: 24px;
+  }
+}
+
+.image-text-wrap {
+      display: flex;
+      justify-content: center;
+      .image-text-block {
+        display: flex;
+        flex-basis: 100%;
+        align-items: center;
+        justify-content: space-around;
+        margin: $space-5 0;
+        img {
+          height: 140px;
+          margin: 0;
+        }
+        p{
+          width: 68%;
+        }
+        @media screen and (max-width: $mobile) {
+          flex-direction: column;
+          flex-basis: 96%;
+          img {
+            width: 80%;
+            height: auto;
+          }
+          p{
+            width: 96%;
+          }
+        }
+      }
+    }

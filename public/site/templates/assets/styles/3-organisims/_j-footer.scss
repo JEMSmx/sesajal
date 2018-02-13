@@ -1,0 +1,234 @@
+footer {
+  background-color: $gray-lighter;
+  background-color: #d9d9d9;
+  background-image: url(../images/madera_chida.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .j-wrap {
+    flex-direction: column;
+    .contact-ways {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      margin-top: 64px;
+      h3 {
+        color: $color-inverse;
+      }
+      hr {
+        width: 80px;
+        margin-bottom: 32px;
+      }
+      p {
+        color: $color-inverse;
+      }
+      a {
+        color: $color-inverse;
+        &:hover {
+          color: darken( $color-inverse, 20); 
+        }
+      }
+      @media screen and (max-width: $mobile){
+        flex-direction: column;
+      }
+      .footer-unit {
+        width: 33.33%;
+        @media screen and (max-width: $mobile){
+          width: 100%;
+        }
+      }
+      .social-networks {
+        text-align: center;
+        ul {
+          display: flex;
+          max-width: 160px;
+          margin: 0 auto;
+          list-style: none;
+          justify-content: space-around;
+          margin-top: 32px;
+          padding: 0;
+          li {
+            a {
+              img {
+                height: 32px;
+              }
+              &:hover {
+                opacity: .75;
+              }
+            }
+          }
+        }
+      }
+      .footer-contact {
+        text-align: center;
+        p {
+          a{
+            &:first-child {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+      .location {
+        text-align: center;
+      }
+    }
+    .footer-bottom {
+      text-align: center;
+      margin: 64px 0;
+      svg {
+        height: 56px;
+        fill: #fff;
+        margin-bottom: 16px;
+      }
+      p {
+        color: $color-inverse;
+        margin-bottom: 0;
+      }
+    }
+    .footer-block-container {
+      display: flex;
+      justify-content: space-around;
+      margin: $space-4 0;
+      align-items: center;
+      .footer-block-element {
+        display: flex;
+        // flex-basis: 50%;
+        // margin-right: $space-2;
+        // min-width: 47%;
+        .footerWidget {
+          height: 100%;
+        }
+        &.center {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          // Podemos cambiar el min width 
+          // segun la cantidad de elementos que necesitemos
+          // min-width: 20%;
+          .image-container {
+            margin: 0;
+            img {
+              height: 140px;
+            }
+          }
+        }
+        &:first-child {
+          flex-basis: 26%;
+          align-items: flex-start;
+          h3 {
+            font-family: $font-wicked;
+            font-size: 24px;
+            font-family: "WickedGrit";
+            letter-spacing: -3px;
+            line-height: 24px;
+            &:first-line {
+              font-size: 32px;
+            }
+          }
+        }
+        &:last-child {
+          flex-basis: 32%;
+          justify-content: center;
+          .text-container {
+            margin-left: $space-2;
+            flex-basis:60%;
+            .footerWidget {
+              padding-left: $space-2;
+              p {
+                font-size: 72%;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+        &:nth-child(2) {
+          flex-basis: 43%;
+          justify-content: flex-end;
+          .text-container {
+            display: flex;
+            flex-basis: 80%;
+            margin-left: $space-2;
+            .footerWidget {
+              flex-basis: 48%;
+              border-left: 5px solid $color-greenlight;
+              ul {
+                list-style: none;
+                a {
+                  color: $black;
+                  font-size: 72%;
+                }
+              }
+            }  
+          }
+        }
+        .text-container {
+          .footerWidget {
+            border-left: 5px solid $color-greenlight;
+            padding-left: $space-2;
+            ul {
+              list-style: none;
+              padding:0; 
+            }
+          }
+        }
+        .image-container {
+          img {
+            height: 140px;
+          }
+        }
+        h3 {
+          color: $color-greenlight;
+          font-weight: lighter;
+        }
+        a {
+          font-weight: bold;
+        }
+        @media screen and (max-width: $tablet) {
+
+          &.center {
+            .image-container {
+              img {
+                height: 80px;
+              }
+            }
+          }
+          &:first-child {
+            flex-basis: 100%;
+            align-items: center;
+            order: 3;
+          }
+          &:last-child {
+            flex-basis: 43%;
+            justify-content: center;
+          }
+          &:nth-child(2) {
+            flex-basis: 57%;
+            .text-container {
+              display: flex;
+              flex-basis: 80%;
+              margin-left: 16px;
+            }
+          }
+
+        }
+        @media screen and (max-width: $mobile) {
+          flex-direction: column;
+          margin: $space-base 0;
+          h3 {
+            text-align: center;
+          }
+          .footerWidget {
+            height: auto;
+          }
+        }
+      }
+      @media screen and (max-width: $tablet) {
+        flex-wrap: wrap;
+      }
+      @media screen and (max-width: $mobile) {
+        margin: 0;
+        flex-direction: column;
+      }
+    }
+  }
+}
