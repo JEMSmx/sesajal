@@ -24,7 +24,7 @@
 
 		<section class="" style="">
 			<div class="j-wrap" style="">
-				<h1>CONTÁCTANOS</h1>
+				<h1><?=__("CONTÁCTANOS");?></h1>
 				
 				<div class="grid">
 					
@@ -34,32 +34,32 @@
 				                
 				                <div class="unit">
 				                	<!-- Text input -->
-				                	<label for="text">Nombre*:</label>
+				                	<label for="text"><?=__("Nombre");?>*:</label>
 				                	<input id="text" type="text" placeholder="placeholder">
 				                </div>
 				                <div class="unit">
 				                	<!-- Text input -->
-				                	<label for="text">Compañia*:</label>
+				                	<label for="text"><?=__("Compañia");?>*:</label>
 				                	<input id="text" type="text" placeholder="placeholder">
 				                </div>
 				                <div class="unit">
 				                	<!-- Text input -->
-				                	<label for="text">País*:</label>
+				                	<label for="text"><?=__("País");?>*:</label>
 				                	<input id="text" type="text" placeholder="placeholder">
 				                </div>
 				                <div class="unit">
 				                	<!-- Text input -->
-				                	<label for="text">Estado*:</label>
+				                	<label for="text"><?=__("Estado");?>*:</label>
 				                	<input id="text" type="text" placeholder="placeholder">
 				                </div>
 				                <div class="unit">
 				                	<!-- Text input -->
-				                	<label for="text">E-mail*:</label>
+				                	<label for="text"><?=__("E-mail");?>*:</label>
 				                	<input id="text" type="text" placeholder="placeholder">
 				                </div>
 				                <div class="unit">
 				                	<!-- Text input -->
-				                	<label for="text">Tema:</label>
+				                	<label for="text"><?=__("Tema");?>:</label>
 				                	<input id="text" type="text" placeholder="placeholder">
 				                </div>
 
@@ -73,7 +73,7 @@
 				</div>
 				<div class="grid">
 					<div class="unit">
-						<h1>CAPTCHA</h1>
+						<h1><?=__("CAPTCHA");?></h1>
 					</div>
 					<div class="unit">
 						<button>Enviar</button>

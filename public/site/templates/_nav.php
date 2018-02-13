@@ -10,27 +10,27 @@
 				<ul class="navigation-menu">
 					<a href="/">
 						<li>
-							INICIO
+							<?=__("INICIO");?>
 						</li>
 					</a>
 					<a href="/nosotros">
 						<li>
-							NOSOTROS
+							<?=__("NOSOSTROS");?>
 						</li>
 					</a>
 					<a href="">
 						<li>
-							PRODUCTOS
+							<?=__("PRODUCTOS");?>
 						</li>
 					</a>
 					<a href="/bolsa-de-trabajo">
 						<li>
-							BOLSA DE TRABAJO
+							<?=__("BOLSA DE TRABAJO");?>
 						</li>
 					</a>
 					<a href="/contacto">
 						<li>
-							CONTACTO
+							<?=__("CONTACTO");?>
 						</li>
 					</a>
 				</ul>

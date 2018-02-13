@@ -14,39 +14,39 @@
 		<section class="section-after-hero" style="">
 			<div class="j-wrap" style="">
 				<div class="text-container">
-					<h1>SEMBRANDO TALENTO</h1>
-					<h3>¡El equipo de Atraccion y Retencion de Talento de Sesajal de da la bienvenida!</h3>
-					<p>SISTEMA EVALUATEST® RH</p>
+					<h1><?=__("SEMBRANDO TALENTO");?></h1>
+					<h3><?=__("¡El equipo de Atraccion y Retencion de Talento de Sesajal de da la bienvenida!");?></h3>
+					<p><?=__("SISTEMA EVALUATEST® RH");?></p>
 				</div>
 				<div class="grid">
 					<div class="unit" style="">
 						<div class="simple-block">
-							<p>¿Eres nuevo?</p>
+							<p><?=__("¿Eres nuevo?");?></p>
 						</div>
 						<div class="simple-block">
-							<p>Al registrarte podrás comenzar tus evaluaciones.</p>
+							<p><?=__("Al registrarte podrás comenzar tus evaluaciones.");?></p>
 						</div>
 						<div class="simple-block">
-							<a href="registro"><button>Regístrate</button></a>
+							<a href="registro"><button><?=__("Regístrate");?></button></a>
 						</div>
 					</div>
 					<div class="unit" style="">
 						<div class="simple-block">
-							<p>¿Ya estás registrado en Evaluest?</p>
+							<p><?=__("¿Ya estás registrado en Evaluest?");?></p>
 						</div>
 						<form>
 				            <fieldset>
 				                
 				                <div class="unit">
 				                	<!-- Text input -->
-				                	<label for="text">Usuario:</label>
+				                	<label for="text"><?=__("Usuario");?>:</label>
 				                	<input id="text" type="text" placeholder="placeholder">
 				                </div>
 				                
 				                
 				                <div class="unit">
 				                	<!-- Password -->
-				                	<label>Contraseña:</label>
+				                	<label><?=__("Contraseña");?>:</label>
 				                	<input type="password" value="password">
 				                </div>
 				               
@@ -54,13 +54,13 @@
 				            </fieldset>
 				        </form>
 				        <div class="simple-block">
-				        	<button>Ingresar</button>
-				        	 <p>Si olvidaste tu contraseña, haz clic <a href="">aqui</a></p>
+				        	<button><?=__("Ingresar");?></button>
+				        	 <p><?=__("Si olvidaste tu contraseña, haz clic");?> <a href=""><?=__("aqui");?></a></p>
 				        </div>
 					</div>
 				</div>
 				<div class="grid">
-					<a href="contenido"><button>BOLSA DE TRABAJO</button></a>
+					<a href="contenido"><button><?=__("BOLSA DE TRABAJO");?></button></a>
 				</div>
 				
 			</div>

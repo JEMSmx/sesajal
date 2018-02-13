@@ -7,7 +7,7 @@
 		    <div class="hero">
 
 		      <div class="hero-text">
-		        <h1>¿QUIÉNES SOMOS?</h1>
+		        <h1><?=__("¿QUIÉNES SOMOS?");?></h1>
 		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero distinctio tempora dolor natus doloremque facere voluptatibus nulla. Quaerat delectus unde, repellendus et consequuntur, pariatur iste nemo eveniet natus, fugit alias!</p>
 		        <!-- <div class="horizontal-btn-group ">
 		          <button class="bg-link" type="button" name="button">Conócenos</button>
@@ -19,7 +19,7 @@
 
 		<section class="nosotros-wrap" style="">
 			<div class="j-wrap">
-				<h1>NUESTROS VALORES</h1>
+				<h1><?=__("NUESTROS VALORES");?></h1>
 				<div class="media-container">
 					<!-- Media Element -->
 					<div class="media-element">
@@ -27,7 +27,7 @@
 							<img src="<?= $config->urls->templates ?>assets/images/icon-hands-sesajal-01.svg" alt="[#TODO]">
 						</div>
 						<div class="text-container">
-							<h3>CONFIANZA</h3>
+							<h3><?=__("CONFIANZA");?></h3>
 						</div>
 					</div>
 					<!-- Media Element -->
@@ -36,7 +36,7 @@
 							<img src="<?= $config->urls->templates ?>assets/images/icon-truck-sesajal-01.svg" alt="[#TODO]">
 						</div>
 						<div class="text-container">
-							<h3>CREATIVIDAD E INOVACIÓN</h3>
+							<h3><?=__("CREATIVIDAD E INOVACIÓN");?></h3>
 						</div>
 					</div>
 					<!-- Media Element -->
@@ -45,7 +45,7 @@
 							<img src="<?= $config->urls->templates ?>assets/images/icon-hands-sesajal-01.svg" alt="[#TODO]">
 						</div>
 						<div class="text-container">
-							<h3>RESPETO</h3>
+							<h3><?=__("RESPETO");?></h3>
 						</div>
 					</div>
 					<!-- Media Element -->
@@ -54,7 +54,7 @@
 							<img src="<?= $config->urls->templates ?>assets/images/icon-truck-sesajal-01.svg" alt="[#TODO]">
 						</div>
 						<div class="text-container">
-							<h3>PASIÓN POR LO QUE HACEMOS</h3>
+							<h3><?=__("PASIÓN POR LO QUE HACEMOS");?></h3>
 						</div>
 					</div>
 					<!-- Media Element -->
@@ -63,7 +63,7 @@
 							<img src="<?= $config->urls->templates ?>assets/images/icon-hands-sesajal-01.svg" alt="[#TODO]">
 						</div>
 						<div class="text-container">
-							<h3>CONGRUENCIA</h3>
+							<h3><?=__("CONGRUENCIA");?></h3>
 						</div>
 					</div>
 					
@@ -75,7 +75,7 @@
 		
 		<section class="certificaciones-wrap">
 			<div class="j-wrap">
-				<h1>CERTIFICACIONES / REGULACIONES</h1>
+				<h1><?=__("CERTIFICACIONES / REGULACIONES");?></h1>
 				<div class="media-container">
 					<div class="media-element">
 						<img src="<?= $config->urls->templates ?>assets/images/icon-hands-sesajal-01.svg" alt="[#TODO]">
@@ -114,7 +114,7 @@
 		</section>
 		<section class="resp-social-wrap" style="">
 			<div class="hero">
-				<h1>RESPONSABILIDAD SOCIAL</h1>
+				<h1><?=__("RESPONSABILIDAD SOCIAL");?></h1>
 					<div class="hero-container">
 						<div class="text-container">
 							<div class="image-container"></div>
