@@ -14,8 +14,8 @@
 		<section class="section-after-hero" style="">
 			<div class="j-wrap" style="">
 				<div class="text-container">
-					<h1><?=__("SEMBRANDO TALENTO");?></h1>
-					<h3><?=__("¡El equipo de Atraccion y Retencion de Talento de Sesajal de da la bienvenida!");?></h3>
+					<h1><?=$page->titleLa?></h1>
+					<h3><?=$page->desc?></h3>
 					<p><?=__("SISTEMA EVALUATEST® RH");?></p>
 				</div>
 				<div class="grid">

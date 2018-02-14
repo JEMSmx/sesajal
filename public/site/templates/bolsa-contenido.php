@@ -7,13 +7,13 @@
 		<section class="" style="">
 			<div class="j-wrap" style="">
 				<div class="simple-block">
-					<h1><?=__("BOLSA DE TRABAJO");?></h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem aut neque, rerum soluta, aliquid consequuntur, provident itaque numquam, voluptatibus harum libero quam porro aliquam ea quisquam amet illum nam accusamus.</p>
+					<h1><?=$page->title?></h1>
+					<p><?=$page->titleLa?></p>
 				</div>
 				
 				<div class="simple-block">
-					<h3><?=__("VACANTES DISPONIBLES");?></h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias harum quaerat sed nostrum eveniet libero quas quam perferendis consequatur unde corrupti delectus exercitationem, odio, quisquam doloremque doloribus voluptatibus, beatae repellat.</p>
+					<h3><?=$page->title2?></h3>
+					<p><?=$page->subtitle?></p>
 				</div>
 				<div class="grid">
 					<div class="unit">
@@ -22,22 +22,19 @@
 						    <th><?=__("Puesto");?></th>
 						    <th><?=__("Ubicación");?></th> 
 						  </tr>
+						 <?php foreach ($page->bolsa as $key => $value) { ?>
 						  <tr>
-						    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
-						    <td>Guadalajara, Jalisco</td> 
-						    
-						  </tr>
-						  <tr>
-						    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
-						    <td>Guadalajara, Jalisco</td> 
+						    <td><?=$value->title1?></td>
+						    <td><?=$value->title2?></td> 
+						  <?php } ?>  
 						  </tr>
 						</table>
 					</div>
 				</div>
 				
 				<div class="simple-block">
-					<h3><?=__("CARTERAS DE TALENTO");?></h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quisquam nulla inventore, neque quo, corrupti nam accusantium quod libero voluptas tempore commodi assumenda mollitia quam consectetur! Necessitatibus, quae aut esse.</p>
+					<h3><?=$page->title3?></h3>
+					<p><?=$page->subtitle1?></p>
 				</div>
 				<div class="grid">
 					<div class="unit">
@@ -46,15 +43,11 @@
 						    <th><?=__("Puesto");?></th>
 						    <th><?=__("Ubicación");?></th>  
 						  </tr>
+						  <?php foreach ($page->bolsa1 as $key => $value) { ?>
 						  <tr>
-						    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
-						    <td>Guadalajara, Jalisco</td> 
-						    
-						  </tr>
-						  <tr>
-						    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
-						    <td>Guadalajara, Jalisco</td> 
-						  </tr>
+						    <td><?=$value->title1?></td>
+						    <td><?=$value->title2?></td> 
+						  <?php } ?> 
 						</table>
 					</div>
 				</div>

@@ -4,7 +4,7 @@
 	<main class="j-workspace bolsa-registro-workspace">
 		<section class="" style="">
 			<div class="j-wrap" style="">
-				<h1><?=__("REGISTRO DE USUARIOS");?></h1>
+				<h1><?=$page->title1?></h1>
 				<h3 class="number-title"><?=__("DATOS DE LA CUENTA");?></h3>
 				<div class="grid">
 					<form>

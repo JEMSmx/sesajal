@@ -7,8 +7,8 @@
 		    <div class="hero">
 
 		      <div class="hero-text">
-		        <h1><?=__("¿QUIÉNES SOMOS?");?></h1>
-		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero distinctio tempora dolor natus doloremque facere voluptatibus nulla. Quaerat delectus unde, repellendus et consequuntur, pariatur iste nemo eveniet natus, fugit alias!</p>
+		        <h1><?=$page->titleLa?></h1>
+		        <p><?=$page->desc?></p>
 		        <!-- <div class="horizontal-btn-group ">
 		          <button class="bg-link" type="button" name="button">Conócenos</button>
 		          <button class="btn-doctors ripple" type="button" name="button">Solicita apoyo</button>
@@ -19,54 +19,19 @@
 
 		<section class="nosotros-wrap" style="">
 			<div class="j-wrap">
-				<h1><?=__("NUESTROS VALORES");?></h1>
+				<h1><?=$page->title1?></h1>
 				<div class="media-container">
 					<!-- Media Element -->
+				<?php foreach ($page->valores as $key => $valor) { ?>
 					<div class="media-element">
 						<div class="image-container">
-							<img src="<?= $config->urls->templates ?>assets/images/icon-hands-sesajal-01.svg" alt="[#TODO]">
+							<img src="<?= $valor->img->url ?>" alt="<?=$valor->title1?>">
 						</div>
 						<div class="text-container">
-							<h3><?=__("CONFIANZA");?></h3>
+							<h3><?=$valor->title1?></h3>
 						</div>
 					</div>
-					<!-- Media Element -->
-					<div class="media-element">
-						<div class="image-container">
-							<img src="<?= $config->urls->templates ?>assets/images/icon-truck-sesajal-01.svg" alt="[#TODO]">
-						</div>
-						<div class="text-container">
-							<h3><?=__("CREATIVIDAD E INOVACIÓN");?></h3>
-						</div>
-					</div>
-					<!-- Media Element -->
-					<div class="media-element">
-						<div class="image-container">
-							<img src="<?= $config->urls->templates ?>assets/images/icon-hands-sesajal-01.svg" alt="[#TODO]">
-						</div>
-						<div class="text-container">
-							<h3><?=__("RESPETO");?></h3>
-						</div>
-					</div>
-					<!-- Media Element -->
-					<div class="media-element">
-						<div class="image-container">
-							<img src="<?= $config->urls->templates ?>assets/images/icon-truck-sesajal-01.svg" alt="[#TODO]">
-						</div>
-						<div class="text-container">
-							<h3><?=__("PASIÓN POR LO QUE HACEMOS");?></h3>
-						</div>
-					</div>
-					<!-- Media Element -->
-					<div class="media-element">
-						<div class="image-container">
-							<img src="<?= $config->urls->templates ?>assets/images/icon-hands-sesajal-01.svg" alt="[#TODO]">
-						</div>
-						<div class="text-container">
-							<h3><?=__("CONGRUENCIA");?></h3>
-						</div>
-					</div>
-					
+				<?php } ?>
 				</div>
 				
 			</div>
@@ -75,68 +40,32 @@
 		
 		<section class="certificaciones-wrap">
 			<div class="j-wrap">
-				<h1><?=__("CERTIFICACIONES / REGULACIONES");?></h1>
-				<div class="media-container">
+				<h1><?=$page->title2?></h1>
+				<?php foreach ($page->certificaciones as $key => $certificacion) { 
+					if(($key+1)%5==1){ ?>
+					<div class="media-container">
+				<?php } ?>
 					<div class="media-element">
-						<img src="<?= $config->urls->templates ?>assets/images/icon-hands-sesajal-01.svg" alt="[#TODO]">
+						<img src="<?=$certificacion->img->url;?>" alt="<?=$certificacion->img->description;?>">
 					</div>
-					<div class="media-element">
-						<img src="<?= $config->urls->templates ?>assets/images/icon-hands-sesajal-01.svg" alt="[#TODO]">
-					</div>
-					<div class="media-element">
-						<img src="<?= $config->urls->templates ?>assets/images/icon-hands-sesajal-01.svg" alt="[#TODO]">
-					</div>
-					<div class="media-element">
-						<img src="<?= $config->urls->templates ?>assets/images/icon-hands-sesajal-01.svg" alt="[#TODO]">
-					</div>
-					<div class="media-element">
-						<img src="<?= $config->urls->templates ?>assets/images/icon-hands-sesajal-01.svg" alt="[#TODO]">
-					</div>
-				</div>
-				<div class="media-container">
-					<div class="media-element">
-						<img src="<?= $config->urls->templates ?>assets/images/icon-hands-sesajal-01.svg" alt="[#TODO]">
-					</div>
-					<div class="media-element">
-						<img src="<?= $config->urls->templates ?>assets/images/icon-hands-sesajal-01.svg" alt="[#TODO]">
-					</div>
-					<div class="media-element">
-						<img src="<?= $config->urls->templates ?>assets/images/icon-hands-sesajal-01.svg" alt="[#TODO]">
-					</div>
-					<div class="media-element">
-						<img src="<?= $config->urls->templates ?>assets/images/icon-hands-sesajal-01.svg" alt="[#TODO]">
-					</div>
-					<div class="media-element">
-						<img src="<?= $config->urls->templates ?>assets/images/icon-hands-sesajal-01.svg" alt="[#TODO]">
-					</div>
-				</div>
+					<?php if(($key+1)%5==0){ ?>
+						</div>
+					<?php } ?>
+				<?php } ?>
 			</div>
 		</section>
 		<section class="resp-social-wrap" style="">
 			<div class="hero">
-				<h1><?=__("RESPONSABILIDAD SOCIAL");?></h1>
+				<h1><?=$page->title3?></h1>
 					<div class="hero-container">
 						<div class="text-container">
 							<div class="image-container"></div>
 							<ul>
+							<?php foreach ($page->repeat1 as $key => $value) { ?>
 								<li>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum incidunt vitae est praesentium fuga facere inventore temporibus. Illum ad, veritatis, quisquam esse at quo iure fugiat perferendis aut quidem similique.</p>
+									<p><?=$value->desc?></p>
 								</li>
-								<li>
-									<p>Commodi, quod suscipit nihil impedit iste hic nesciunt et cum, a. Sequi, assumenda pariatur magnam non facere cum asperiores dolore ex perspiciatis vel molestias architecto est commodi nam, id dignissimos.</p>
-								</li>
-								<li>
-									<p>Eos ad labore modi, beatae aperiam delectus vitae ducimus, quam dolores deserunt officia incidunt quasi corrupti soluta voluptatum asperiores cupiditate maxime distinctio adipisci, consequatur!</p>
-								</li>
-								<li>
-									<p>Dolorem qui facilis rerum veritatis a, tempore obcaecati beatae voluptatibus. Ab ipsum quo saepe provident, doloremque laboriosam expedita dolorum cum fugiat debitis deleniti</p>
-								</li>
-								<li>
-									<p>Aliquid molestiae vel vero fugiat, provident sequi atque illo inventore quisquam sapiente non, corporis nobis quod! Sed qui tempore, perspiciatis, velit quibusdam magnam voluptates deleniti quasi hic. Ad, libero, beatae.</p>
-								</li>
-								<li>
-									<p>Ullam incidunt dolor nostrum numquam distinctio, expedita molestias accusantium, iure at, eius culpa quod. Mollitia iusto quos tempore deleniti nostrum est similique dolore labore</p>
-								</li>
+							<?php } ?>
 							</ul>
 						</div>
 					</div>

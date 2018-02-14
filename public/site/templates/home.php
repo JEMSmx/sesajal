@@ -10,49 +10,35 @@
 				</video>
 				<div class="video-text-wrap">
 					<div class="video-text-block">
-						<h1><?= __("SEMBRAMOS IDEAS,
-						COSECHAMOS CONFIANZA®"); ?>
+						<h1><?= $page->titleLa ?>
 						</h1>
-						<p class=""><?= __("Ofrecemos al mercado nacional e internacional productos derivados de semillas oleaginosas de la más alta calidad, elaborados con materias primas cultivadas en México."); ?></p>
+						<p><?= $page->desc ?></p>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section class="productos-wrap" style="">
 			<div class="j-wrap">
-				<h1><?=__("PRODUCTOS");?></h1>
-				<p><?=__("Contamos con una amplia variedad de productos para ofrecer soluciones integrales a cada necesidad.");?></p>
+				<h1><?=$page->title1;?></h1>
+				<p><?=$page->subtitle;?></p>
 				<!--  Media element para variaciones de producto-->
-				<div class="media-container">
-					<!-- Media Element -->
+				<?php $productos=$pages->find("template=producto"); 
+					foreach ($productos as $key => $producto) { 
+						if(($key+1)%3==1){ ?>
+					<div class="media-container">
+				<?php } ?>
 					<div class="media-element center">
 						<div class="image-container">
-							<img src="<?= $config->urls->templates ?>assets/images/producto-item-1-1.jpg" alt="[#TODO]">
+							<a href="<?=$producto->url?>"><img src="<?= $producto->img->url ?>" alt="<?= $producto->title ?>"></a>
 						</div>
 						<div class="text-container">
-							<h3><?=__("Aceites Vegetales e Ingredientes");?></h3>
+							<h3><?= $producto->title ?></h3>
 						</div>
 					</div>
-					<!-- Media Element -->
-					<div class="media-element center">
-						<div class="image-container">
-							<img src="<?= $config->urls->templates ?>assets/images/producto-item-2-2.jpg" alt="[#TODO]">
+					<?php if(($key+1)%3==0){ ?>
 						</div>
-						<div class="text-container">
-							<h3><?=__("Semillas y Granos");?></h3>
-						</div>
-					</div>
-					<!-- Media Element -->
-					<div class="media-element center">
-						<div class="image-container">
-							<img src="<?= $config->urls->templates ?>assets/images/producto-item-3-3.jpg" alt="[#TODO]">
-						</div>
-						<div class="text-container">
-							<h3><?=__("Alimento para mascotas");?></h3>
-						</div>
-					</div>
-					
-				</div>
+					<?php } ?>
+				<?php } ?>
 
 				
 			</div>
@@ -71,51 +57,26 @@
 
 		<section class="ventajas-wrap">
 			<div class="j-wrap">
-				<h1><?=__("VENTAJAS COMPETITIVAS");?> </h1>
-				<div class="media-container">
+				<h1><?=$page->title2?> </h1>
+				
 					<!-- Media Element -->
+				<?php foreach ($page->repeat as $key => $value) { 
+					if(($key+1)%2>0){ ?>
+					<div class="media-container">
+				<?php } ?>
 					<div class="media-element">
 						<div class="image-container">
-							<img src="<?= $config->urls->templates ?>assets/images/icon-hands-sesajal-01.svg" alt="[#TODO]">
+							<img src="<?=$value->img->url?>" alt="[#TODO]">
 						</div>
 						<div class="text-container">
-							<h3><?=__("FLEXIBILIDAD");?></h3>
-							<p><?=__("Para elaborar productos a la medida de nuestros clientes.");?></p>
+							<h3><?=$value->title2?></h3>
+							<p><?=$value->desc?></p>
 						</div>
 					</div>
-					<!-- Media Element -->
-					<div class="media-element">
-						<div class="image-container">
-							<img src="<?= $config->urls->templates ?>assets/images/icon-truck-sesajal-01.svg" alt="[#TODO]">
+					<?php if(($key+1)%2==0){ ?>
 						</div>
-						<div class="text-container">
-							<h3><?=__("GARANTÍA DE ABASTECIMIENTO");?></h3>
-							<p><?=__("Contamos con estructuras de proveeduría que garantizan la buena distribución de nuestros clientes.");?></p>
-						</div>
-					</div>
-				</div>
-				<div class="media-container">
-					<!-- Media Element -->
-					<div class="media-element">
-						<div class="image-container">
-							<img src="<?= $config->urls->templates ?>assets/images/icon-reward-sesajal-01.svg" alt="[#TODO]">
-						</div>
-						<div class="text-container">
-							<h3><?=__("CONFIABILIDAD");?></h3>
-							<p><?=__("Entrega de productos con los más altos estandares de calidad desde 28 años.");?></p>
-						</div>
-					</div>
-					<!-- Media Element -->
-					<div class="media-element">
-						<div class="image-container">
-							<img src="<?= $config->urls->templates ?>assets/images/icon-efficiency-sesajal-01.svg" alt="[#TODO]">
-						</div>
-						<div class="text-container">
-							<h3><?=__("MÁXIMA EFICIENCIA");?></h3>
-							<p><?=__("Eliminamos intermediarios para procesar productos directamente del campo y llevarlos hasta su puerta.");?></p>
-						</div>
-					</div>
-				</div>
+					<?php } ?>
+				<?php } ?>
 				<!-- <div class="grid">
 					<div class="unit half">
 						<div class="p-img-left">

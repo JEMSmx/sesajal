@@ -20,7 +20,7 @@
 					<div class="footerWidget">
 						<ul class="">
 							<li>
-								<a href="/inicio"><?=__("INICIO");?></a>
+								<a href="/"><?=__("INICIO");?></a>
 							</li>
 							<li>
 								<a href="/nosotros"><?=__("NOSOTROS");?></a>
@@ -58,12 +58,9 @@
 
 				<div class="text-container">
 					<div class="footerWidget contactInfo">
-						<p><?=__("SESAJAL S.A. de C.V.
-							Calle 22 No. 2332
-							Zona Industrial, C.P. 44940");?>
-						<?=__("Guadalajara, Jal. México");?></p>
-						<p><?=__("Teléfono: +52 (33)31343470
-						sales.support@sesajal.com");?></p>							
+						<p><?=$pages->get(1)->subtitle1?></p>
+						<p>Teléfono: <?=$pages->get(1)->title3?>
+							<?=$pages->get(1)->title4;?></p>
 						<i class="fa fa-facebook"></i> <?=__("sesajalmx");?>
 					</div>
 				</div>

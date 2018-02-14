@@ -15,7 +15,7 @@
 					</a>
 					<a href="/nosotros">
 						<li>
-							<?=__("NOSOSTROS");?>
+							<?=__("NOSOTROS");?>
 						</li>
 					</a>
 					<a href="">
