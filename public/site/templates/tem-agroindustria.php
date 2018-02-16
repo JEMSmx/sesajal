@@ -42,12 +42,14 @@
 				<?php foreach ($page->children() as $key => $value) { 
 					   $var=$value->valores->first(); ?>
 					<div class="media-element center">
+						<a href="<?=$value->url?>">
 						<div class="image-container">
 							<img src="<?php if($var) echo $var->img->url ?>" alt="<?=$var->img->url ?>" width="80" heigth="80">
-						</div>
+						</div></a>
+						<a href="<?=$value->url?>">
 						<div class="text-container">
 							<h3><?=$value->title?></h3>
-						</div>
+						</div></a>
 					</div>
 				<?php } ?>
 				</div>
