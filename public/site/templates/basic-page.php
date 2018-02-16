@@ -4,7 +4,7 @@
 
 	<main class="j-workspace aviso-privacidad-workspace">
 		<section class="intro-section" style="">
-		    <div class="hero">
+		    <div class="hero" style="background-image: url('<?php if($page->fondo) echo $page->fondo->url; ?>');">
 		      <div class="hero-text">
 		        <h1><?=$page->title;?></h1>
 		      </div>

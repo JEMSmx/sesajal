@@ -9,27 +9,27 @@
 				<!-- Navegación principal -->
 				<ul class="navigation-menu">
 					<a href="/">
-						<li>
+						<li <?php if($page->template=='home') echo 'class="active"'; ?>>
 							<?=__("INICIO");?>
 						</li>
 					</a>
-					<a href="/nosotros">
-						<li>
+					<a  href="/nosotros">
+						<li <?php if($page->template=='nosotros') echo 'class="active"'; ?>>
 							<?=__("NOSOTROS");?>
 						</li>
 					</a>
 					<a href="">
-						<li>
+						<li <?php if($page->template=='productos') echo 'class="active"'; ?>>
 							<?=__("PRODUCTOS");?>
 						</li>
 					</a>
 					<a href="/bolsa-de-trabajo">
-						<li>
+						<li <?php if($page->template=='bolsa-trabajo') echo 'class="active"'; ?>>
 							<?=__("BOLSA DE TRABAJO");?>
 						</li>
 					</a>
 					<a href="/contacto">
-						<li>
+						<li <?php if($page->template=='contacto') echo 'class="active"'; ?>>
 							<?=__("CONTACTO");?>
 						</li>
 					</a>

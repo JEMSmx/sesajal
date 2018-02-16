@@ -22,14 +22,14 @@
 				<h1><?=$page->title1;?></h1>
 				<p><?=$page->subtitle;?></p>
 				<!--  Media element para variaciones de producto-->
-				<?php $productos=$pages->find("template=producto"); 
-					foreach ($productos as $key => $producto) { 
+				<?php $productos=$pages->get(1029); 
+					foreach ($productos->children() as $key => $producto) { 
 						if(($key+1)%3==1){ ?>
 					<div class="media-container">
 				<?php } ?>
 					<div class="media-element center">
 						<div class="image-container">
-							<a href="<?=$producto->url?>"><img src="<?= $producto->img->url ?>" alt="<?= $producto->title ?>"></a>
+							<a href="<?=$producto->url?>"><img src="<?= $producto->logo->url ?>" alt="<?= $producto->title ?>"></a>
 						</div>
 						<div class="text-container">
 							<h3><?= $producto->title ?></h3>
