@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title><?= __("Sesajal"); ?> <?php if($page->id>1) echo '| '.$page->title ?> </title>
+  <title><?= __("Sesajal"); ?> | <?= $page->title; ?></title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="canonical" href="<?= $page->httpUrl; ?>">
   <!-- [#TODO] Dont forget to update the FAVICON IMAGES in the next route -->
@@ -24,14 +24,14 @@
   <meta name="keywords" content="<?= $page->headline ?>"/>
   <meta property="og:locale" content="es_MX" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="<?= __("Sesajal"); ?> <?php if($page->id>1) echo '| '.$page->title ?> " />
+  <meta property="og:title" content="<?= __("Sesajal"); ?> | <?= $page->title; ?>" />
   <meta property="og:image" content="<?= ($page->img2) ? $page->img2->url:$page->fondo->url;?>"/>
   <meta property="og:description" content="<?= ($page->summary) ? $page->summary:$page->desc; ?>" />
   <meta property="og:url" content="<?= $page->httpUrl; ?>" />
   <meta property="og:site_name" content="<?= __("Sesajal"); ?>" />
   <meta name="dc.language" content="es">
   <meta name="dc.source" content="<?= $page->httpUrl; ?>">
-  <meta name="dc.title" content="<?= __("Sesajal"); ?> <?php if($page->id>1) echo '| '.$page->title ?> ">
+  <meta name="dc.title" content="<?= __("Sesajal"); ?> | <?= $page->title; ?>" />
   <meta name="dc.subject" content="<?= $page->headline; ?>">
   <meta name="dc.description" content="<?= ($page->summary) ? $page->summary:$page->desc; ?>">
   <link rel='dns-prefetch' href='//google-analytics.com' />
