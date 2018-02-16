@@ -79,7 +79,7 @@
 				<?php foreach ($page->valores as $key => $value) { ?>
 					<div class="media-element center">
 						<div class="image-container">
-							<img src="<?=$value->img->url?>" alt="<?=$value->title1?>]">
+							<img src="<?=$value->img->url?>" alt="<?=$value->title1?>" width="80" height=80>
 						</div>
 						<div class="text-container">
 							<h3><?=$value->title1?></h3>
