@@ -71,55 +71,19 @@
 				</div>
 	
 
-				
-
 				<div class="media-container">
-					<!-- Media Element -->
-					<div class="media-element center">
-						<div class="image-container">
-							<img src="https://dummyimage.com/80x80/000/fff" alt="[#TODO]">
-						</div>
-						<div class="text-container">
-							<h3>Propiedades</h3>
-						</div>
-					</div>
-					<!-- Media Element -->
-					<div class="media-element center">
-						<div class="image-container">
-							<img src="https://dummyimage.com/80x80/000/fff" alt="[#TODO]">
-						</div>
-						<div class="text-container">
-							<h3>Propiedades</h3>
-						</div>
-					</div>
-					<!-- Media Element -->
-					<div class="media-element center">
-						<div class="image-container">
-							<img src="https://dummyimage.com/80x80/000/fff" alt="[#TODO]">
-						</div>
-						<div class="text-container">
-							<h3>Propiedades</h3>
-						</div>
-					</div>
-					<!-- Media Element -->
-					<div class="media-element center">
-						<div class="image-container">
-							<img src="https://dummyimage.com/80x80/000/fff" alt="[#TODO]">
-						</div>
-						<div class="text-container">
-							<h3>Propiedades</h3>
-						</div>
-					</div>
-					<!-- Media Element -->
-					<div class="media-element center">
-						<div class="image-container">
-							<img src="https://dummyimage.com/80x80/000/fff" alt="[#TODO]">
-						</div>
-						<div class="text-container">
-							<h3>Propiedades</h3>
-						</div>
-					</div>
 					
+					<!-- Media Element -->
+				<?php foreach ($page->valores as $key => $value) { ?>
+					<div class="media-element center">
+						<div class="image-container">
+							<img src="<?=$value->img->url?>" alt="<?=$value->title1?>" width="80" height="80">
+						</div>
+						<div class="text-container">
+							<h3><?=$value->title1?></h3>
+						</div>
+					</div>
+				 <?php } ?>
 				</div>
 				
 
