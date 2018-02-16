@@ -18,7 +18,7 @@
 							<?=__("NOSOTROS");?>
 						</li>
 					</a>
-					<a href="">
+					<a href="/#productos">
 						<li <?php if($page->template=='productos') echo 'class="active"'; ?>>
 							<?=__("PRODUCTOS");?>
 						</li>

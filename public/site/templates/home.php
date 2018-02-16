@@ -17,7 +17,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="productos-wrap" style="">
+		<section class="productos-wrap" id="productos">
 			<div class="j-wrap">
 				<h1><?=$page->title1;?></h1>
 				<p><?=$page->subtitle;?></p>
