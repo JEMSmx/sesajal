@@ -13,6 +13,14 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" integrity="sha256-K3Njjl2oe0gjRteXwX01fQD5fkk9JFFBdUHy/h38ggY=" crossorigin="anonymous" rel="stylesheet">
   <link href="<?= $config->urls->templates ?>assets/styles/main.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="<?= $config->urls->templates ?>assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?= $config->urls->templates ?>assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?= $config->urls->templates ?>assets/images/favicon-16x16.png">
+  <link rel="manifest" href="<?= $config->urls->templates ?>assets/images/site.webmanifest">
+  <link rel="mask-icon" href="<?= $config->urls->templates ?>assets/images/safari-pinned-tab.svg" color="#77ac35">
+  <meta name="msapplication-TileColor" content="#fcfcfc">
+  <meta name="theme-color" content="#ffffff">
   
 </head>
 <body>
