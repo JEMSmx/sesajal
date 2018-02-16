@@ -3,10 +3,10 @@
 	  include('./_nav.php'); ?>
 	<main class="j-workspace">
 		<section class="mainHome">
-			<div class="hero">
-				<video poster="<?= $config->urls->templates ?>assets/images/bg-video-img.png" id="bgvid" playsinline autoplay muted loop>
+			<div class="hero"<?php if(!$page->video){ ?> style="background-image: url(<?php if($page->fondo) echo $page->fondo->url; ?>); <?php } ?>>
+				<video poster="<?php if ($page->fondo) echo $page->fondo->url;?>" id="bgvid" playsinline autoplay muted loop>
 					<!-- <source src="./assets/videos/video-home.webm" type="video/webm"> -->
-					<source src="<?= $config->urls->templates ?>assets/videos/video-home.mp4" type="video/mp4">
+					<source src="<?php if ($page->video) echo $page->video->url;?>" type="video/mp4">
 				</video>
 				<div class="video-text-wrap">
 					<div class="video-text-block">
@@ -20,7 +20,7 @@
 		<section class="productos-wrap" id="productos">
 			<div class="j-wrap">
 				<h1><?=$page->title1;?></h1>
-				<p><?=$page->subtitle;?></p>
+				<?=$page->subtitle;?>
 				<!--  Media element para variaciones de producto-->
 				<?php $productos=$pages->get(1029); 
 					foreach ($productos->children() as $key => $producto) { 
@@ -47,7 +47,7 @@
 		<section class="half-split-block" style="">
 		    <div class="hero">
 		      <div class="hero-text">
-		        <p><?=__("Tenemos presencia en más de");?> <span class="bigFontData"><?=__("20 países");?></span> <?=__("con reconocimiento internacional y un equipo de más de");?> <span class="bigFontData"><?=__("1,000");?></span> <?=__("colaboradores.");?>
+		        <p><?= __("Tenemos presencia en más de")?> <span class="bigFontData"><?=__("20 países");?></span> <?=__("con reconocimiento internacional y un equipo de más de");?> <span class="bigFontData"><?=__("1,000");?></span> <?=__("colaboradores.");?>
 		      </div>
 		      <div class="hero-image">
 		      	<img src="<?= $config->urls->templates ?>assets/images/mapa.png" alt="">
