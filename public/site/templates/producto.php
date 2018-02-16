@@ -1,7 +1,7 @@
 <?php include('./_head.php');
 	  
 	  include('./_nav.php'); ?>
-	<main class="j-workspace">
+	<main class="j-workspace producto-agroindustria-workspace">
 		<section class="intro-section" style="">
 		    <div class="hero" style="background-image: url('<?php if($page->fondo) echo $page->fondo->url; ?>');">
 		      <div class="hero-text">
@@ -14,10 +14,8 @@
 		      </div>
 		    </div>
 		</section>
-		
-		
 
-		<section class="" style="">
+		<section class="section-after-hero" style="">
 			<div class="j-wrap" style="">
 				<div class="media-container">
 					<!-- Media Element -->
@@ -73,19 +71,55 @@
 				</div>
 	
 
+				
+
 				<div class="media-container">
-					
 					<!-- Media Element -->
-				<?php foreach ($page->valores as $key => $value) { ?>
 					<div class="media-element center">
 						<div class="image-container">
-							<img src="<?=$value->img->url?>" alt="<?=$value->title1?>" width="80" height=80>
+							<img src="https://dummyimage.com/80x80/000/fff" alt="[#TODO]">
 						</div>
 						<div class="text-container">
-							<h3><?=$value->title1?></h3>
+							<h3>Propiedades</h3>
 						</div>
 					</div>
-				 <?php } ?>
+					<!-- Media Element -->
+					<div class="media-element center">
+						<div class="image-container">
+							<img src="https://dummyimage.com/80x80/000/fff" alt="[#TODO]">
+						</div>
+						<div class="text-container">
+							<h3>Propiedades</h3>
+						</div>
+					</div>
+					<!-- Media Element -->
+					<div class="media-element center">
+						<div class="image-container">
+							<img src="https://dummyimage.com/80x80/000/fff" alt="[#TODO]">
+						</div>
+						<div class="text-container">
+							<h3>Propiedades</h3>
+						</div>
+					</div>
+					<!-- Media Element -->
+					<div class="media-element center">
+						<div class="image-container">
+							<img src="https://dummyimage.com/80x80/000/fff" alt="[#TODO]">
+						</div>
+						<div class="text-container">
+							<h3>Propiedades</h3>
+						</div>
+					</div>
+					<!-- Media Element -->
+					<div class="media-element center">
+						<div class="image-container">
+							<img src="https://dummyimage.com/80x80/000/fff" alt="[#TODO]">
+						</div>
+						<div class="text-container">
+							<h3>Propiedades</h3>
+						</div>
+					</div>
+					
 				</div>
 				
 
