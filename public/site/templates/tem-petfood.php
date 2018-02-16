@@ -37,29 +37,16 @@
 
 			<div class="media-container">
 				<!-- Media Element -->
+			<?php foreach ($page->variante as $key => $value) { ?>
 				<div class="media-element center">
 					<div class="image-container">
-						<img src="https://dummyimage.com/300x300/000/fff" alt="[#TODO]">
-						<img src="https://dummyimage.com/200x100/000/fff" alt="[#TODO]">
+						<img src="<?=$value->img->url?>" alt="<?=$value->img->description?>" width="300" height="300">
+						<img src="<?=$value->logo->url?>" alt="<?=$value->logo->description?>" width="200" height="100">
 					</div>
 
 				</div>
-				<!-- Media Element -->
-				<div class="media-element center">
-					<div class="image-container">
-						<img src="https://dummyimage.com/300x300/000/fff" alt="[#TODO]">
-						<img src="https://dummyimage.com/200x100/000/fff" alt="[#TODO]">
-					</div>
-
-				</div>
-				<!-- Media Element -->
-				<div class="media-element center">
-					<div class="image-container">
-						<img src="https://dummyimage.com/300x300/000/fff" alt="[#TODO]">
-						<img src="https://dummyimage.com/200x100/000/fff" alt="[#TODO]">
-					</div>
-
-				</div>
+			<?php } ?>
+				
 			</div>
 		</div>
 	</section>

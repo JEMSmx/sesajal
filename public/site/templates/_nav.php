@@ -19,7 +19,7 @@
 						</li>
 					</a>
 					<a href="/#productos">
-						<li <?php if($page->template=='productos') echo 'class="active"'; ?>>
+						<li <?php if($page->template=='productos' || $page->template=='tem-agroindustria' || $page->tempalte=='tem-petfood' || $page->template=='tem-foodservice' || $page->template=="producto") echo 'class="active"'; ?>>
 							<?=__("PRODUCTOS");?>
 						</li>
 					</a>

@@ -19,6 +19,7 @@
   <link rel="mask-icon" href="<?= $config->urls->templates ?>assets/images/safari-pinned-tab.svg" color="#77ac35">
   <meta name="msapplication-TileColor" content="#fcfcfc">
   <meta name="theme-color" content="#ffffff">
+  <meta name="application-name" content="<?= __("Sesajal"); ?> "/>
   
 </head>
 <body>
