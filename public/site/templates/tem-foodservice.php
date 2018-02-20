@@ -4,7 +4,7 @@
 
 	  <main class="j-workspace producto-foodservice-carousel-workspace">
 		<section class="intro-section" style="">
-		    <div class="hero">
+		    <div class="hero" style="background-image: url('<?php if($page->fondo) echo $page->fondo->url; ?>');">
 		      <div class="hero-text">
 		      	<div class="image-container">
 		      		<img src="<?=$page->logo->url?>" alt="<?=$page->title?>">
