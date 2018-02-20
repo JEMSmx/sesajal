@@ -6,6 +6,9 @@
 		<section class="intro-section" style="">
 		    <div class="hero" style="background-image: url('<?php if($page->fondo) echo $page->fondo->url; ?>');">
 		      <div class="hero-text">
+		      	<div class="image-container">
+		      		<img src="<?=$page->logo->url?>" alt="<?=$page->title?>">
+		      	</div>
 		        <h1><?= $page->titleLa ?></h1>
 		        <?=$page->desc?>
 		        <!-- <div class="horizontal-btn-group ">
@@ -44,7 +47,7 @@
 					<div class="media-element center">
 						<a href="<?=$value->url?>">
 						<div class="image-container">
-							<img src="<?php if($var) echo $var->img->url ?>" alt="<?=$var->img->description ?>" width="80" heigth="80">
+							<img src="<?php if($var) echo $var->img->url ?>" width="80" heigth="80">
 						</div></a>
 						<a href="<?=$value->url?>">
 						<div class="text-container">

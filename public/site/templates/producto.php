@@ -37,7 +37,7 @@
 					<!-- Media Element -->
 					<div class="media-element">
 						<div class="image-container">
-							<img src="<?= $config->urls->templates ?>assets/images/icon-success-sesajal-01.svg" alt="[#TODO]">
+							<img src="<?= $config->urls->templates ?>assets/images/icon-star.svg" alt="[#TODO]">
 						</div>
 						<div class="text-container">
 							<h3>Propiedades:</h3>
@@ -54,7 +54,7 @@
 						<?php foreach ($page->extraOption as $key => $value) { ?>
 							<div class="media-element">
 								<div class="image-container">
-									<img src="<?= $config->urls->templates ?>assets/images/icon-success-sesajal-01.svg" alt="[#TODO]">
+									<img src="<?= $config->urls->templates ?>assets/images/icon-star-sesajal-01.svg" alt="[#TODO]">
 								</div>
 								<div class="text-container">
 									<h3>Propiedades:</h3>

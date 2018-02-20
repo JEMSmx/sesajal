@@ -44,7 +44,7 @@
 					<?php foreach ($page->children() as $key => $value) { 
 					   $var=$value->valores->first(); ?>
 					   <div class="item">
-							<a href="<?=$value->url?>"><img src="<?php if($var) echo $var->img->url ?>" alt="<?=$var->img->description?>"></a>
+							<a href="<?=$value->url?>"><img src="<?php if($var) echo $var->img->url ?>"></a>
 						</div>
 					<?php } ?>
 					</div>

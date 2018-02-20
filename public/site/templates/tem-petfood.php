@@ -6,6 +6,9 @@
 	  	<section class="intro-section" style="">
 	  		<div class="hero" style="background-image: url('<?php if($page->fondo) echo $page->fondo->url; ?>');">
 	  			<div class="hero-text">
+	  				<div class="image-container">
+		      			<img src="<?=$page->logo->url?>" alt="<?=$page->title?>">
+		      		</div>
 	  				<h1><?=$page->titleLa?></h1>
 	  				<?=$page->desc?>
 		        <!-- <div class="horizontal-btn-group ">
@@ -40,8 +43,8 @@
 			<?php foreach ($page->variante as $key => $value) { ?>
 				<div class="media-element center">
 					<div class="image-container">
-						<img src="<?=$value->img->url?>" alt="<?=$value->img->description?>" width="300" height="300">
-						<img src="<?=$value->logo->url?>" alt="<?=$value->logo->description?>" width="200" height="100">
+						<img src="<?=$value->img->url?>"  width="300" height="300">
+						<img src="<?=$value->logo->url?>" width="200" height="100">
 					</div>
 
 				</div>
