@@ -7,12 +7,7 @@
 					<img src="<?= $config->urls->templates ?>assets/images/sesajal-color-logo.svg" alt="">
 				</a>
 				<!-- Navegación principal -->
-				<ul class="navigation-menu">
-					<a href="/">
-						<li <?php if($page->template=='home') echo 'class="active"'; ?>>
-							<?=__("INICIO");?>
-						</li>
-					</a>
+			  <ul class="navigation-menu">
 					<a  href="/nosotros">
 						<li <?php if($page->template=='nosotros') echo 'class="active"'; ?>>
 							<?=__("NOSOTROS");?>

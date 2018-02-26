@@ -1,13 +1,13 @@
 <?php include('./_head.php');
-	  
+
 	  include('./_nav.php'); ?>
 
-	  <main class="j-workspace">
+	  <main class="j-workspace agroindustria">
 		<section class="intro-section" style="">
 		    <div class="hero" style="background-image: url('<?php if($page->fondo) echo $page->fondo->url; ?>');">
 		      <div class="hero-text">
 		      	<div class="image-container">
-		      		<img src="<?=$page->logo->url?>" alt="<?=$page->title?>">
+		      		<img src="<?=$page->logo->url?>" alt="<?=$page->title?>" height="160px;">
 		      	</div>
 		        <h1><?= $page->titleLa ?></h1>
 		        <?=$page->desc?>
@@ -18,8 +18,8 @@
 		      </div>
 		    </div>
 		</section>
-		
-		
+
+
 
 		<section class="" style="">
 			<div class="j-wrap" style="">
@@ -42,7 +42,7 @@
 				</div>
 				<div class="media-container">
 					<!-- Media Element -->
-				<?php foreach ($page->children() as $key => $value) { 
+				<?php foreach ($page->children() as $key => $value) {
 					   $var=$value->valores->first(); ?>
 					<div class="media-element center">
 						<a href="<?=$value->url?>">
@@ -56,9 +56,9 @@
 					</div>
 				<?php } ?>
 				</div>
-				
+
 			</div>
 		</section>
-		
+
 	</main>
 <?php include('./_foot.php'); ?>

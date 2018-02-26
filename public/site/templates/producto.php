@@ -1,5 +1,5 @@
 <?php include('./_head.php');
-	  
+
 	  include('./_nav.php'); ?>
 	<main class="j-workspace producto-agroindustria-workspace">
 		<section class="intro-section" style="">
@@ -54,10 +54,10 @@
 						<?php foreach ($page->extraOption as $key => $value) { ?>
 							<div class="media-element">
 								<div class="image-container">
-									<img src="<?= $config->urls->templates ?>assets/images/icon-star-sesajal-01.svg" alt="[#TODO]">
+									<img src="<?= $value->img->url ?>">
 								</div>
 								<div class="text-container">
-									<h3>Propiedades:</h3>
+									<h3><?=$value->title1?></h3>
 									<ul>
 										<?php foreach ($value->ideal as $key => $val) { ?>
 										<li>

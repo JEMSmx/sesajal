@@ -1,12 +1,13 @@
-// 
+//
 // Para el home
-// 
+//
 .mainHome {
 	position: relative;
   overflow-y: hidden;
   border-bottom: $space-2 solid $color-greenlight;
   .hero {
     overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.10);
     video {
     	position: absolute;
     	top: 50%;
@@ -22,14 +23,8 @@
     	transition: 1s opacity;
       @media screen and (max-width: $mobile) {
         position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // min-width: 100%;
-        // min-height: 100%;
         width: auto;
-        // height: auto;
         z-index: -100;
-        // transform: translateX(-50%) translateY(-50%);
         background: url('../images/bg-video-img.png') no-repeat;
         background-size: cover;
         transition: 1s opacity;
@@ -38,19 +33,19 @@
       }
     }
 
-    .video-text-wrap { 
-      font-family: Gotham-Book, sans-serif;
-      font-weight:100; 
-      display: flex;
-      height: 100%;
-      align-items: center;
+    .video-text-wrap {
+			display: flex;
+			height: 100%;
+			align-items: center;
+			max-width: 1232px;
+			padding: 16px;
+			padding-top: 88px;
+			margin: 0 auto;
       .video-text-block {
         display: flex;
         flex-direction: column;
         flex-basis: 49%;
         position: relative;
-        top: -40px;
-        margin: 0 64px;
         @media screen and (max-width: $mobile) {
           flex-basis: 100%;
         }
@@ -72,28 +67,28 @@
         text-align: left;
         width: 78%;
       }
-      button { 
+      button {
         display: block;
         width: 80%;
         padding: .4rem;
-        border: none; 
-        margin: 1rem auto; 
+        border: none;
+        margin: 1rem auto;
         font-size: 1.3rem;
         background: rgba(255,255,255,0.23);
         color: #fff;
-        border-radius: 3px; 
+        border-radius: 3px;
         cursor: pointer;
         transition: .3s background;
       }
-      button:hover { 
+      button:hover {
         background: rgba(0,0,0,0.5);
       }
       a {
-        transition: .6s background; 
+        transition: .6s background;
       }
     }
-    // @media screen and (max-width: 500px) { 
-    //   div{width:70%;} 
+    // @media screen and (max-width: 500px) {
+    //   div{width:70%;}
     // }
     // @media screen and (max-device-width: 800px) {
     //   html { background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed; }
@@ -102,6 +97,6 @@
   }
 }
 
-// 
+//
 // Fin de estilos para el home
-// 
+//

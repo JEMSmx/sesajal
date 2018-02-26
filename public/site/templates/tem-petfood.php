@@ -43,8 +43,8 @@
 			<?php foreach ($page->variante as $key => $value) { ?>
 				<div class="media-element center">
 					<div class="image-container">
-						<img src="<?=$value->img->url?>"  width="300" height="300">
-						<img src="<?=$value->logo->url?>" width="200" height="100">
+						<img src="<?=$value->img->url?>"  width="600" height="600">
+						<img src="<?=$value->logo->url?>" width="350" height="100">
 					</div>
 
 				</div>

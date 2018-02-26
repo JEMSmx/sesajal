@@ -40,7 +40,7 @@
 				                <div class="unit">
 				                	<!-- Text input -->
 				                	<label for="text"><?=__("Usuario");?>:</label>
-				                	<input id="text" type="text" placeholder="placeholder">
+				                	<input id="text" type="text" placeholder="">
 				                </div>
 				                
 				                

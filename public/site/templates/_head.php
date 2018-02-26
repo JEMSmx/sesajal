@@ -39,5 +39,6 @@
   <link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
   <link rel='dns-prefetch' href='//ajax.cloudflare.com' />
   <link rel='dns-prefetch' href='//ajax.googleapis.com' />
+  <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
 </head>
 <body>

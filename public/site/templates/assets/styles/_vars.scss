@@ -11,6 +11,7 @@ $color-danger:    #f44336;  .color-danger    { color: $color-danger;    };  .bg-
 
 $color-greenbase: #A8C837;  .color-greenbase { color: $color-greenbase; };  .bg-color-greenbase { background-color: $color-greenbase; }
 $color-greenlight:#B2CD32;  .color-greenlight{ color: $color-greenlight;};  .bg-color-greenlight{ background-color: $color-greenlight;}
+$color-whitesmoke:#f3f3f3;  .color-greenlight{ color: $color-greenlight;};  .bg-color-greenlight{ background-color: $color-greenlight;}
 
 // Grayscale
 $gray-base:    lighten(#000, 0%);         .gray-base    { color: $gray-base;    };  .bg-gray-base    { background-color: $gray-base;    }

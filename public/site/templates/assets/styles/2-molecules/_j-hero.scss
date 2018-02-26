@@ -7,6 +7,7 @@
     //Capa enfrente de la imagen de un color y las letras siempre se puedan
     //Ver apaesar de que la imagen tenga el color de la fuente.
     background-color: rgba(0, 0, 0, 0.10);
+    // background-color: rgba(0, 0, 0, 0.10);
     background-blend-mode: multiply;
     // El height se calcula en el 100 del alto de la pantalla menos
     // el tamaño del header.
@@ -37,7 +38,7 @@
         text-align: left;
         max-width: 50%;
         text-transform: none;
-        color: $color-greenlight;
+        color: $white;
         font-weight: 200;
         font-family: $font-wicked;
 
@@ -53,6 +54,7 @@
         max-width: 40%;
         font-size: 24px;
         text-align: left;
+        color: $white;
       }
       @media screen and (max-width: $tablet){
         text-align: left;

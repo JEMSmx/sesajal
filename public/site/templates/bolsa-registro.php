@@ -12,19 +12,19 @@
 				            	<div class="unit">
 				            		<!-- Text input -->
 				            		<label for="text"><?=__("Usuario");?>*:</label>
-				            		<input id="text" type="text" placeholder="placeholder">
+				            		<input id="text" type="text" placeholder="">
 				            	</div>
 				            	<div class="unit">
 				            		<!-- Password -->
 				            		<label><?=__("Contraseña");?>*:</label>
-				            		<input type="password" value="password">
-				            		<input type="password" value="password">
+				            		<label for="" class="underInput">Contraseña<input type="password" value="password"></label>
+				            		<label for="" class="underInput">Confirmar contraseña<input type="password" value="password"></label>
 				            	</div>
 				            	<div class="unit">
 				            		<!-- Email -->
 				            		<label><?=__("Correo");?>*:</label>
-				            		<input type="email">
-				            		<input type="email">
+				            		<label for="" class="underInput"><span><input type="checkbox"> No tengo correo electrónico</span>Correo electrónico<input type="email"></label>
+				            		<label for="" class="underInput">Confirmar correo electrónico<input type="email"></label>
 				            	</div>
 				            </fieldset>
 				        </form>
@@ -38,14 +38,14 @@
 				                <div class="unit">
 				                	<!-- Text input -->
 				                	<label for="text"><?=__("Nombre");?>*:</label>
-				                	<input id="text" type="text" placeholder="placeholder">
+				                	<label for="" class="underInput">Nombre(s)<input id="text" type="text" placeholder=""></label>
 				                </div>
 
 				                <div class="unit">
 				                	<!-- Text input -->
-				                	<label for="text"><?=__("Apellidos");?>s*:</label>
-				                	<input id="text" type="text" placeholder="placeholder">
-				                	<input id="text" type="text" placeholder="placeholder">
+				                	<label for="text"><?=__("Apellidos");?>*:</label>
+				                	<label for="" class="underInput">Primer Apellido<input id="text" type="text" placeholder=""></label>
+				                	<label for="" class="underInput">Segundo Apellido<input id="text" type="text" placeholder=""></label>
 				                </div>
 
 
