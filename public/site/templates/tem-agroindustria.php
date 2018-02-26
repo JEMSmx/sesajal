@@ -26,9 +26,7 @@
 				<div class="image-text-wrap">
 					<div class="image-text-block">
 						<img src="<?=$page->img->url?>?>">
-						<div class="text-colum">
 						<?=$page->subtitle?>
-						</div>
 					</div>
 				</div>
 				<!-- <div class="grid">
