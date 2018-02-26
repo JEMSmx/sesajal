@@ -25,8 +25,10 @@
 			<div class="j-wrap" style="">
 				<div class="image-text-wrap">
 					<div class="image-text-block">
-						<img src="<?=$page->img->url?>?>" alt="[#TODO]">
+						<img src="<?=$page->img->url?>?>">
+						<div class="text-colum">
 						<?=$page->subtitle?>
+						</div>
 					</div>
 				</div>
 				<!-- <div class="grid">
