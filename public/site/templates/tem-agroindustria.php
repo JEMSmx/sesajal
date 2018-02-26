@@ -49,7 +49,7 @@
 						<div class="image-container">
 							<?php if($var->img)
 									$img = $var->img->height(240, array('quality' => 80, 'upscaling' => true, 'cropping' => false)); ?>
-							<img src="<?php if($img) echo $var->img->url ?>">
+							<img src="<?php if($img) echo $img->url ?>">
 						</div></a>
 						<a href="<?=$value->url?>">
 						<div class="text-container">
