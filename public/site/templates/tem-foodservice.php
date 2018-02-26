@@ -44,7 +44,9 @@
 					<?php foreach ($page->children() as $key => $value) { 
 					   $var=$value->valores->first();
 					   if($var)
-					  	 $img = $var->img->height(120, array('quality' => 90, 'upscaling' => true, 'cropping' => false));
+					  	 $img = $var->img->height(320, array('quality' => 90, 'upscaling' => true, 'cropping' => false));
+					   else
+					    continue;
 					    ?>
 					   <div class="item">
 							<a href="<?=$value->url?>"><img src="<?php if($img) echo $img->url ?>"></a>

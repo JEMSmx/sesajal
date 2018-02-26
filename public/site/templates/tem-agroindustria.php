@@ -47,7 +47,9 @@
 					<div class="media-element center">
 						<a href="<?=$value->url?>">
 						<div class="image-container">
-							<img src="<?php if($var) echo $var->img->url ?>" width="80" heigth="80">
+							<?php if($var->img)
+									$img = $var->img->height(240, array('quality' => 80, 'upscaling' => true, 'cropping' => false)); ?>
+							<img src="<?php if($img) echo $var->img->url ?>">
 						</div></a>
 						<a href="<?=$value->url?>">
 						<div class="text-container">
