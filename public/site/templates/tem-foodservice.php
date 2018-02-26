@@ -42,9 +42,12 @@
 				<div class="media-container">
 					<div class="owl-carousel">
 					<?php foreach ($page->children() as $key => $value) { 
-					   $var=$value->valores->first(); ?>
+					   $var=$value->valores->first();
+					   if($var)
+					  	 $img = $var->img->->height(120, array('quality' => 90, 'upscaling' => true, 'cropping' => false));
+					    ?>
 					   <div class="item">
-							<a href="<?=$value->url?>"><img src="<?php if($var) echo $var->img->url ?>"></a>
+							<a href="<?=$value->url?>"><img src="<?php if($img) echo $img->url ?>"></a>
 						</div>
 					<?php } ?>
 					</div>
