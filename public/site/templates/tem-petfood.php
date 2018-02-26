@@ -7,7 +7,7 @@
 	  		<div class="hero" style="background-image: url('<?php if($page->fondo) echo $page->fondo->url; ?>');">
 	  			<div class="hero-text">
 	  				<div class="image-container">
-		      			<img src="<?=$page->logo->url?>" alt="<?=$page->title?>">
+		      			<img src="<?=$page->logo->url?>" alt="<?=$page->title?>" height="250px;">
 		      		</div>
 	  				<h1><?=$page->titleLa?></h1>
 	  				<?=$page->desc?>
